@@ -1,0 +1,90 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 380px;
+    padding: 10px;
+    gap: 10px;
+    border: 1px solid #C0C0C0;
+    background: #FFF;
+    align-items: flex-start;
+  }
+  
+  .frame-1 {
+    width: 230px;
+    height: 270px;
+    background-size: contain; /* Ajusta la imagen para que toda se muestre dentro del contenedor */
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-bottom: 10px;
+  }
+  
+  
+  .offer-text {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.1px;
+  }
+  
+  .frame-2 {
+    display: flex;
+    padding: 10px 9px 7px 10px;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+    border-top: 1px solid #C0C0C0;
+    border-bottom: 1px solid #C0C0C0;
+    background: #FFF;
+  }
+  
+  .product-name {
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: -0.15px;
+  }
+  
+  .product-price {
+    color: #D41E1E;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: -0.15px;
+  }
+  
+  .frame-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .product-button {
+    color: #FFF;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: -0.15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    background: #5DA1DA;
+    padding: 6px 60px;
+    align-self: stretch;
+    border: 2px solid #5DA1DA;
+    transition: color 0.3s ease, background 0.3s ease, border 0.3s ease; /* Transición suave para color, fondo y borde */
+
+  }
+
+  .product-button:hover {
+    color: #5DA1DA; /* Color del texto */
+    background: #FFF; /* Color de fondo */
+    border: 2px solid #5DA1DA; /* Borde del botón */
+  }

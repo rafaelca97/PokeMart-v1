@@ -1,0 +1,23 @@
+<div class="product-list-container">
+  <img src="assets/images/OFERTA.png" alt="Central Image" class="central-image">
+
+  <div class="card-container">
+    <!-- Mostrar producto con ID 1 (Pokéball) si existe -->
+    <ng-container *ngIf="getProductById(1) as product1">
+      <app-card-product [product]="product1"></app-card-product>
+    </ng-container>
+
+    <!-- Mostrar producto con ID 2 (Greatball) si existe -->
+    <ng-container *ngIf="getProductById(2) as product2">
+      <app-card-product [product]="product2"></app-card-product>
+    </ng-container>
+
+    <ng-container *ngIf="getProductById(3) as product3">
+      <app-card-product [product]="product3"></app-card-product>
+    </ng-container>
+
+    <ng-container *ngIf="getProductById(4) as product4">
+      <app-card-product [product]="product4"></app-card-product>
+    </ng-container>
+  </div>
+</div>

@@ -1,0 +1,198 @@
+header {
+    width: 100%;
+    padding: 0; /* Elimina el relleno alrededor del header */
+    margin: 0; /* Elimina los márgenes alrededor del header */
+  }
+  
+  /* Contenedor para el top-row */
+  .top-row-container {
+    width: 100vw; /* Ocupa todo el ancho de la ventana */
+    margin-left: calc(-100vw / 2 + 50%); /* Alinea el contenedor a la izquierda */
+    position: relative; /* Necesario para el pseudo-elemento */
+    overflow: hidden; /* Asegura que no haya desbordamiento */
+  }
+  
+  /* Primera línea: Logo, Barra de Búsqueda, Iconos de Usuario y Carrito */
+  .top-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 44px; /* Espacio entre el logo y el borde izquierdo */
+    padding-bottom: 12px; /* Espacio adicional debajo del borde inferior */
+    border-bottom: 1px solid #5DA1DA; /* Borde inferior de 1px con color azul */
+    box-sizing: border-box; /* Incluye el borde en el cálculo del tamaño del elemento */
+  }
+  
+  .logo {
+    width: 450px;
+    height: 92px;
+    margin-right: -17px; /* Espacio de 17px entre el logo y la barra de búsqueda */
+  }
+  
+  .search-bar {
+    width: 666px;
+    height: 30px;
+    padding: 8px 8px 8px 20px;
+    border: 3px solid #5DA1DA; /* Stroke color */
+    background: #FFF;
+    border-radius: 4px; /* Opcional: agregar bordes redondeados */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+  }
+  
+  .search-bar input {
+    flex: 1; /* Permite que el input ocupe el espacio restante */
+    border: none;
+    outline: none;
+    font-family: 'VT323', monospace; /* Fuente de la barra de búsqueda */
+    font-size: 24px; /* Tamaño de la fuente */
+  }
+  
+  .search-bar .search-icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .icons {
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .user-icon {
+    width: 28.8px;
+    height: 36px;
+  }
+  
+  .cart-icon {
+    width: 36px;
+    height: 36px;
+  }
+  
+  /* Contenedor para la navegación */
+  .navigation-container {
+    width: 100vw; /* Ocupa todo el ancho de la ventana */
+    margin-left: calc(-100vw / 2 + 50%); /* Alinea el contenedor a la izquierda */
+    position: relative; /* Necesario para el pseudo-elemento */
+    overflow: hidden; /* Asegura que no haya desbordamiento */
+  }
+  
+  /* Menú de navegación */
+  .navigation {
+    display: flex; /* Alinea el contenido de forma horizontal */
+    height: 70px; /* Altura del contenedor del menú */
+    padding: 0; /* Elimina el relleno interno para el contenedor del menú */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    background-color: #FFF; /* Fondo blanco del menú */
+    border-bottom: 1px solid #5DA1DA; /* Borde inferior azul */
+    box-sizing: border-box; /* Incluye el borde en el cálculo del tamaño del elemento */
+  }
+  
+  /* Contenedor para la lista de navegación */
+  .navigation ul {
+    display: flex; /* Alinea los elementos de la lista de forma horizontal */
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el relleno */
+    margin: 0; /* Elimina el margen */
+    gap: 189px; /* Ajusta el espacio entre los elementos del menú según sea necesario */
+  }
+  
+  /* Estilos para los elementos de la lista de navegación */
+  .navigation li {
+    position: relative; /* Necesario para el pseudo-elemento */
+    padding: 0 10px; /* Espacio alrededor del texto */
+  }
+  
+  .nav-item {
+    position: relative; /* Necesario para el pseudo-elemento */
+    padding: 20px; /* Elimina el relleno interno */
+}
+  
+  .nav-item::after {
+    content: '';
+    position: absolute;
+    bottom: -3px; /* Coloca el borde debajo del texto */
+    left: 0;
+    width: 100%; /* Ancho del borde */
+    height: 3px; /* Altura del borde */
+    background-color: transparent; /* Color del borde inicial (transparente) */
+    transition: background-color 0.3s, height 0.3s ease; /* Transiciones suaves para el borde */
+  }
+  
+  .nav-item a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #000; /* Color del texto */
+    font-family: 'Open Sans', sans-serif; /* Fuente Open Sans */
+    font-size: 20px; /* Tamaño de la fuente */
+    font-weight: 600; /* Peso de la fuente */
+    font-style: normal; /* Estilo de la fuente */
+    line-height: normal; /* Altura de línea normal */
+    position: relative; /* Necesario para el pseudo-elemento */
+    transition: color 0.3s;
+
+  }
+  
+  /* Estilo del enlace cuando se pasa el cursor */
+  .nav-item:hover::after {
+    background-color: #5DA1DA; /* Color del borde al pasar el cursor */
+    height: 6px; /* Altura del borde cuando se pasa el cursor (ensanchado) */
+  }
+  
+  .nav-item:hover a {
+    color: #5DA1DA; /* Color del texto cuando se pasa el cursor */
+  }
+
+
+.banner-container {
+    width: 100vw; /* Ocupa todo el ancho de la ventana */
+    margin-left: calc(-100vw / 2 + 50%); /* Alinea el contenedor a la izquierda */
+    position: relative; /* Necesario para el pseudo-elemento */
+    overflow: hidden; /* Asegura que no haya desbordamiento */
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+  }
+.banner {
+    display: flex; /* Alinea el contenido de forma horizontal */
+    height: 60px; /* Altura del banner (ajustado para ser un poco más alto) */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    gap: 14px; /* Espacio entre los elementos del banner */
+    background: #5DA1DA; /* Fondo azul del banner */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); /* Sombra del banner */
+    margin: 0; /* Elimina el margen alrededor del banner */
+    padding: 0 20px; /* Espacio interno horizontal del banner */
+    color: #FFF; /* Color de texto por defecto */
+    font-family: 'Open Sans', sans-serif; /* Fuente Open Sans para el texto del banner */
+    font-size: 18px; /* Tamaño de la fuente ajustado */
+    font-style: normal; /* Estilo de la fuente */
+    font-weight: 400; /* Peso de la fuente por defecto */
+    line-height: normal; /* Altura de línea normal */
+    width: 100vw; /* Ancho completo de la ventana */
+    box-sizing: border-box; /* Incluye el padding y el borde en el cálculo del tamaño */
+  }
+  
+  /* Estilo para la parte destacada del texto */
+  .highlight {
+    font-weight: 600; /* Peso de la fuente más destacado */
+  }
+  
+  /* Estilo para el botón CTA */
+  .cta-button {
+    font-weight: 700; /* Peso de la fuente más destacado */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: #FFF; /* Color del texto del botón CTA */
+    background-color: transparent; /* Fondo transparente para el botón CTA */
+    padding: 0; /* Elimina el padding alrededor del texto del botón CTA */
+    border: none; /* Elimina el borde alrededor del botón CTA */
+    transition: color 0.3s; /* Transición suave para el color del texto */
+  }
+  
+  /* Efecto hover para el botón CTA */
+  .cta-button:hover {
+    color: #FFF; /* Color del texto al pasar el cursor (puede ajustar según el diseño deseado) */
+  }
+  
+  

@@ -1,0 +1,13 @@
+<div class="carousel-container">
+
+  <div class="carousel">
+    <div class="carousel-slides">
+      <img *ngFor="let slide of slides; let i = index" [src]="slide" [alt]="'Imagen ' + (i + 1)" class="carousel-image">
+    </div>
+  </div>
+
+  <div class="carousel-indicators">
+    <img src="assets/images/Icon-buble-fill.png" alt="Indicador 1" *ngFor="let slide of slides; let i = index"
+       [class.active]="i === currentSlide" (click)="goToSlide(i)">
+  </div>
+</div>

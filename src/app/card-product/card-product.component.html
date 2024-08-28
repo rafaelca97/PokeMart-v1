@@ -1,0 +1,17 @@
+<div class="card">
+  <!-- Primer Frame -->
+  <div class="frame-1" [style.background-image]="'url(' + product.image + ')'">
+    <span class="offer-text" *ngIf="product.price < 500">¡OFERTA!</span>
+  </div>
+
+  <!-- Segundo Frame -->
+  <div class="frame-2">
+    <span class="product-name">{{ product.name }}</span>
+    <span class="product-price">{{ product.price | currency }}</span>
+  </div>
+
+  <!-- Tercer Frame -->
+  <div class="frame-3">
+    <button class="product-button">VER PRODUCTO</button>
+  </div>
+</div>
